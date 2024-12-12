@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Link from 'next/link';
 const Nav = () => {
   return (
@@ -14,7 +13,15 @@ const Nav = () => {
             <Link href="/cart">
               <span className="ml-4 text-lg">Cart</span>
             </Link>
+            <Link href="/login">
+              <span className="ml-4 text-lg">Login</span>
+            </Link>
+            <Link href="/signup">
+              <span className="ml-4 text-lg">SignUp</span>
+            </Link>
           </nav>
+
+
         </div>
       </header>
     </div>
