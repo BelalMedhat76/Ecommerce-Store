@@ -1,4 +1,5 @@
 
+
 "use client";
 import { useEffect, useState } from "react";
 import { db } from "../../../lib/firebase";
@@ -9,42 +10,38 @@ const ProductDetail = ({ params }) => {
   // Unwrap params to get the `id`
   const { id } = use(params); // Unwrap `params` to get `id`
   const [product, setProduct] = useState(null);
+  const [showAlert, setShowAlert] = useState(false);
 
   // Function to add the product to the cart
   const addToCart = () => {
-    // Check if product is loaded
     if (!product) return;
 
-    // Get the cart from localStorage, or initialize it as an empty array
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Check if the product already exists in the cart
     const existingProduct = storedCart.find((item) => item.id === product.id);
 
     if (existingProduct) {
-      // If the product exists, increase its quantity
       const updatedCart = storedCart.map((item) =>
         item.id === product.id
-          ? { ...item, quantity: item.quantity + 1 } // Increment quantity of existing product
+          ? { ...item, quantity: item.quantity + 1 }
           : item
       );
       localStorage.setItem("cart", JSON.stringify(updatedCart));
     } else {
-      // If the product is new, add it to the cart
       const updatedCart = [
         ...storedCart,
-        { id: product.id, name: product.name, price: product.price, quantity: 1 }, // Add new product
+        { id: product.id, name: product.name, price: product.price, quantity: 1 },
       ];
       localStorage.setItem("cart", JSON.stringify(updatedCart));
     }
 
-    // Notify the user that the product has been added
-    alert("Product added to cart!");
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
   };
 
   // Fetch product details from Firestore
   useEffect(() => {
-    if (!id) return; // Ensure id exists
+    if (!id) return;
 
     const fetchProduct = async () => {
       try {
@@ -52,7 +49,6 @@ const ProductDetail = ({ params }) => {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-          // Include the `id` from `params` to ensure it's correctly passed with product data
           setProduct({ id, ...docSnap.data() });
         } else {
           console.log("No such product!");
@@ -66,13 +62,14 @@ const ProductDetail = ({ params }) => {
   }, [id]);
 
   // Handle loading state if product data isn't available yet
-  if (!product) return <p>Loading...</p>;
+  if (!product) return <div className="loader">Loading...</div>; // You can replace this with a spinner
 
   return (
     <div className="min-h-screen bg-gray-700 p-6 flex justify-center items-center">
-      <div className="bg-slate-800 p-6 rounded-lg shadow-md w-96">
+      {/* Product Card */}
+      <div className="bg-slate-800 p-6 rounded-lg shadow-md w-96 transform transition-all duration-300 hover:scale-105">
         <img
-          src={product.image}
+          src={product.imageUrl}
           alt={product.name}
           className="w-full h-48 object-cover rounded-lg mb-6"
         />
@@ -82,12 +79,19 @@ const ProductDetail = ({ params }) => {
           ${(product.price / 100).toFixed(2)}
         </p>
         <button
-          onClick={addToCart} // Ensure the addToCart function is called here
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          onClick={addToCart}
+          className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transform transition-all duration-300"
         >
           Add to Cart
         </button>
       </div>
+
+      {/* Animated Cart Alert */}
+      {showAlert && (
+        <div className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-lg shadow-lg transform transition-all duration-500 opacity-100 animate-slide-in">
+          <p className="font-semibold">Product added to cart!</p>
+        </div>
+      )}
     </div>
   );
 };
