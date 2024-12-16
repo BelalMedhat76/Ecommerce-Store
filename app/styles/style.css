@@ -2,25 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #dbbebe;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #bd9d9d;
-    --foreground: #ededed;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--foreground);
-  background: var(--background);
+  background-color: #eef0ef;
+
   font-family: Arial, Helvetica, sans-serif;
+}
+.Nav{
+  background-color: #ece8e8;
+  color: #000;
+}
+.cardHeadProduct{
+  background-color: #eef0ef;
+}
+.cardHeadProduct:hover{
+  background-color: #6bc3dd;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+.CardProductContainer{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 400px;
+  overflow: hidden;
+
+
+}
+.productPriceTitle{
+  display: flex;
+  justify-content: space-between;
+}
+.productHread{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.desc{
+  margin-bottom: 30px;
 }
 .admin-layout {
   font-family: "Inter", sans-serif;
