@@ -1,4 +1,4 @@
-// File: /home/countzero/Ecommerce-Store/app/products/[id]/page.jsx
+// File: /home/countzero/Next.js/ecommerce-store/Ecommerce-Store/app/products/[id]/page.jsx
 import * as entry from '../../../../../app/products/[id]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
