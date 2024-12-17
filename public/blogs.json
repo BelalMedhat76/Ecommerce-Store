@@ -1,0 +1,163 @@
+[
+    {
+      "id": "1",
+      "title": "City of London wants to have its brexit cake",
+      "date": "May 08, 2020",
+      "image": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "The city of London plans a bold move to handle its brexit situation.",
+      "extraContent": "Additional details about the city's response and outcomes."
+    },
+    {
+      "id": "2",
+      "title": "On the other hand we provide with righteous",
+      "date": "May 07, 2020",
+      "image": "https://images.pexels.com/photos/15357200/pexels-photo-15357200/free-photo-of-man-in-black-trench-coat-wearing-eyeglasses-while-leaning-on-metal-railing.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Righteous solutions are now the trend for modern dilemmas.",
+      "extraContent": "In-depth insights about providing righteous alternatives."
+    },
+    {
+      "id": "3",
+      "title": "The spectacle before us was indeed sublime",
+      "date": "May 06, 2020",
+      "image": "https://images.pexels.com/photos/7228006/pexels-photo-7228006.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "A moment to behold, the sublime experience remains unmatched.",
+      "extraContent": "Descriptive content about the impact of the event."
+    },
+    {
+      "id": "4",
+      "title": "Technology advancing faster than we imagined",
+      "date": "May 05, 2020",
+      "image": "https://images.pexels.com/photos/18073592/pexels-photo-18073592/free-photo-of-red-trainers-skateboard-and-backpack.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "The pace of technological advancement surprises us all.",
+      "extraContent": "Discussing the opportunities and challenges of fast tech growth."
+    },
+    {
+      "id": "5",
+      "title": "Exploring the wonders of AI in 2024",
+      "date": "May 04, 2020",
+      "image": "https://images.pexels.com/photos/974911/pexels-photo-974911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "Artificial Intelligence has transformed multiple industries this year.",
+      "extraContent": "Highlighting top AI trends and predictions for the future."
+    },
+    {
+      "id": "6",
+      "title": "How remote work changed our lives forever",
+      "date": "May 03, 2020",
+      "image": "https://images.pexels.com/photos/994197/pexels-photo-994197.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "The era of remote work has ushered in new ways to work and live.",
+      "extraContent": "Exploring the positive and negative effects of remote work."
+    },
+    {
+      "id": "7",
+      "title": "The rise of eco-friendly urban planning",
+      "date": "May 02, 2020",
+      "image": "https://images.pexels.com/photos/1381556/pexels-photo-1381556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "Green cities are taking the world by storm with sustainable planning.",
+      "extraContent": "Deep dive into the principles of eco-urban development."
+    },
+    {
+      "id": "8",
+      "title": "Healthy habits to transform your life",
+      "date": "May 01, 2020",
+      "image": "https://images.pexels.com/photos/3769132/pexels-photo-3769132.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Simple yet powerful habits to improve your lifestyle.",
+      "extraContent": "A guide to starting and maintaining healthy routines."
+    },
+    {
+      "id": "9",
+      "title": "Breaking barriers in education through technology",
+      "date": "April 30, 2020",
+      "image": "https://images.pexels.com/photos/5651118/pexels-photo-5651118.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "How tech solutions are democratizing access to education.",
+      "extraContent": "Real-life examples of tech-driven education programs."
+    },
+    {
+      "id": "10",
+      "title": "The future of transportation: Electric and beyond",
+      "date": "April 29, 2020",
+      "image": "https://images.pexels.com/photos/15311967/pexels-photo-15311967/free-photo-of-a-woman-wearing-a-brown-blazer.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Electric vehicles are paving the way for cleaner transport.",
+      "extraContent": "Exploring innovations beyond electric vehicles."
+    },
+    {
+      "id": "11",
+      "title": "Top 10 destinations for 2024 travel enthusiasts",
+      "date": "April 28, 2020",
+      "image": "https://images.pexels.com/photos/14931586/pexels-photo-14931586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Discover the most exciting travel destinations this year.",
+      "extraContent": "Travel tips, guides, and must-see spots for 2024."
+    },
+    {
+      "id": "12",
+      "title": "How mindfulness improves mental health",
+      "date": "April 27, 2020",
+      "image": "https://images.pexels.com/photos/25748616/pexels-photo-25748616/free-photo-of-portrait-of-a-young-man-wearing-sunglasses-and-a-gray-polo-shirt.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Mindfulness has proven benefits for mental well-being.",
+      "extraContent": "Techniques to incorporate mindfulness into daily life."
+    },
+    {
+      "id": "13",
+      "title": "The role of blockchain in modern finance",
+      "date": "April 26, 2020",
+      "image": "https://images.pexels.com/photos/9043001/pexels-photo-9043001.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Blockchain technology is revolutionizing financial systems.",
+      "extraContent": "Explaining how blockchain ensures transparency and security."
+    },
+    {
+      "id": "14",
+      "title": "Sustainable fashion: A new trend or necessity?",
+      "date": "April 25, 2020",
+      "image": "https://images.pexels.com/photos/2451598/pexels-photo-2451598.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "The rise of eco-friendly clothing in modern fashion.",
+      "extraContent": "How consumers can choose sustainable options."
+    },
+    {
+      "id": "15",
+      "title": "5 steps to boost your productivity today",
+      "date": "April 24, 2020",
+      "image": "https://images.pexels.com/photos/17570148/pexels-photo-17570148/free-photo-of-man-in-cap-and-t-shirt.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Effective ways to increase focus and productivity.",
+      "extraContent": "A structured guide to daily productivity habits."
+    },
+    {
+      "id": "16",
+      "title": "Space exploration: What’s next for humanity?",
+      "date": "April 23, 2020",
+      "image": "https://images.pexels.com/photos/13310926/pexels-photo-13310926.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "A look into upcoming missions and space technologies.",
+      "extraContent": "Discussing humanity's quest to explore Mars and beyond."
+    },
+    {
+      "id": "17",
+      "title": "How 5G is transforming the digital world",
+      "date": "April 22, 2020",
+      "image": "https://images.pexels.com/photos/983564/pexels-photo-983564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "5G networks are changing the way we connect and interact.",
+      "extraContent": "Real-world examples of 5G implementations globally."
+    },
+    {
+      "id": "18",
+      "title": "The growing influence of renewable energy",
+      "date": "April 21, 2020",
+      "image": "https://images.pexels.com/photos/3781789/pexels-photo-3781789.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Solar, wind, and other renewables are shaping energy futures.",
+      "extraContent": "Innovative projects using renewable resources."
+    },
+    {
+      "id": "19",
+      "title": "Learning to code: Tips for beginners",
+      "date": "April 20, 2020",
+      "image": "https://images.pexels.com/photos/2853909/pexels-photo-2853909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "content": "Beginner-friendly tips for learning coding effectively.",
+      "extraContent": "Resources and roadmaps for new developers."
+    },
+    {
+      "id": "20",
+      "title": "The impact of social media on society",
+      "date": "April 19, 2020",
+      "image": "https://images.pexels.com/photos/25745245/pexels-photo-25745245/free-photo-of-female-model-wearing-a-white-hoodie-and-a-knit-hat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "content": "Social media's role in shaping opinions and behavior.",
+      "extraContent": "Analyzing its benefits and drawbacks."
+    }
+  ]
+  

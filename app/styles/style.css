@@ -86,3 +86,11 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+/* Add this CSS to your styles */
+.swiper-slide img {
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+}

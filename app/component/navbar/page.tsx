@@ -10,7 +10,7 @@ import NavIcons from './NavIcons';
     {/* MOBILE */}
     <div className="h-full flex items-center justify-between md:hidden">
       <Link href="/">
-        <div className="text-2xl tracking-wide">LAMA</div>
+        <div className="text-2xl tracking-wide"><Image src="/logo2.png" alt="" width={80} height={50} /></div>
       </Link>
     <Menu/>     
     </div>
@@ -19,13 +19,15 @@ import NavIcons from './NavIcons';
         {/* LEFT */}
         <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="" width={24} height={24} />
-            <div className="text-2xl tracking-wide">LAMA</div>
+            <Image src="/logo2.png" alt="" width={80} height={50} />
+            <div className="text-2xl tracking-wide"></div>
           </Link>
           <div className="hidden xl:flex gap-4">
             <Link href="/">Homepage</Link>
-            <Link href="/product">Shop</Link>
-            <Link href="/">Deals</Link>
+           
+            <Link href="/shop">Shop</Link>
+
+            <Link href="/blog">Blogs</Link>
             <Link href="/">About</Link>
             <Link href="/">Contact</Link>
           </div>
