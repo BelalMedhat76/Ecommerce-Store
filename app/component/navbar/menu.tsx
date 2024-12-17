@@ -86,7 +86,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Menu = () => {
@@ -95,10 +94,6 @@ const Menu = () => {
 
   const router = useRouter();
 
-  const handleProfile = () => {
-    router.push("/login");
-    setOpen(false); // Close menu after navigation
-  };
 
   const handleCart = () => {
     router.push("/cart");
@@ -133,7 +128,7 @@ const Menu = () => {
   };
 
   // Function to handle link clicks and close the menu
-  const handleLinkClick = (href) => {
+  const handleLinkClick = (href:string) => {
     router.push(href);
     setOpen(false); // Close menu after navigation
   };
