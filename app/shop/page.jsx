@@ -69,7 +69,7 @@ const Shop = () => {
       {/* Header Section with Background Image and Dark Overlay */}
       <header className="relative bg-cover bg-center h-96 text-white flex items-center justify-center" style={{ backgroundImage: 'url("/shopback.jpg")' }}>
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
+        <div className="absolute inset-0 bg-black opacity-40 "></div>
         
         <motion.div
           initial={{ opacity: 0, y: -50 }}
