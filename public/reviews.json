@@ -1,0 +1,59 @@
+[
+    {
+      "id": "1",
+      "user": "John Doe",
+      "rating": 5,
+      "comment": "This product is amazing! It exceeded my expectations. Highly recommend.",
+      "userImage": "https://images.pexels.com/photos/1630786/pexels-photo-1630786.jpeg"
+    },
+    {
+      "id": "2",
+      "user": "Jane Smith",
+      "rating": 4,
+      "comment": "Good quality, but the shipping took longer than expected.",
+      "userImage": "https://images.pexels.com/photos/1239292/pexels-photo-1239292.jpeg"
+    },
+    {
+      "id": "3",
+      "user": "Emily Johnson",
+      "rating": 3,
+      "comment": "The product works well, but it's a bit pricier than others.",
+      "userImage": "https://images.pexels.com/photos/1552087/pexels-photo-1552087.jpeg"
+    },
+    {
+      "id": "4",
+      "user": "Michael Brown",
+      "rating": 5,
+      "comment": "Fantastic product! Worth every penny. Will buy again.",
+      "userImage": "https://images.pexels.com/photos/1587006/pexels-photo-1587006.jpeg"
+    },
+    {
+      "id": "5",
+      "user": "Sarah White",
+      "rating": 4,
+      "comment": "Great product, but I wish it came in more colors.",
+      "userImage": "https://images.pexels.com/photos/1574153/pexels-photo-1574153.jpeg"
+    },
+    {
+        "id": "6",
+        "user": "Michael Brown",
+        "rating": 5,
+        "comment": "Fantastic product! Worth every penny. Will buy again.",
+        "userImage": "https://images.pexels.com/photos/1587006/pexels-photo-1587006.jpeg"
+      },
+      {
+        "id": "7",
+        "user": "Jane Smith",
+        "rating": 4,
+        "comment": "Good quality, but the shipping took longer than expected.",
+        "userImage": "https://images.pexels.com/photos/1239292/pexels-photo-1239292.jpeg"
+      },
+      {
+        "id": "8",
+        "user": "John Doe",
+        "rating": 5,
+        "comment": "This product is amazing! It exceeded my expectations. Highly recommend.",
+        "userImage": "https://images.pexels.com/photos/1630786/pexels-photo-1630786.jpeg"
+      }
+  ]
+  

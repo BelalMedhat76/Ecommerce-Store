@@ -1,26 +1,31 @@
-
-
-
 "use client";
-import { useEffect, useState } from "react";
-import AuthGuard from "../component/AuthGuard";
-import { useRouter } from "next/navigation";  // Correct usage of the hook
+import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Cart = () => {
   const [cart, setCart] = useState([]);
-  const router = useRouter(); // Make sure to define router here
+  const [totalAmount, setTotalAmount] = useState(0);
 
+  // Load the cart from localStorage and calculate the total price
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCart(storedCart);
+
+    const total = storedCart.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0
+    );
+    setTotalAmount(total);
   }, []);
 
+  // Remove product from cart
   const removeFromCart = (id) => {
     const updatedCart = cart.filter((item) => item.id !== id);
     setCart(updatedCart);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
+  // Update product quantity in cart
   const updateQuantity = (id, quantity) => {
     const updatedCart = cart.map((item) =>
       item.id === id ? { ...item, quantity } : item
@@ -29,57 +34,73 @@ const Cart = () => {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
-  const goToCheckout = () => {
-    router.push("/checkout");  // Now it's inside the component body
-  };
-
-  if (cart.length === 0) {
-    return <p className="text-center text-white mt-6">Your cart is empty.</p>;
-  }
-
   return (
-    <AuthGuard>
-      <div className="min-h-screen bg-gray-700 p-6">
-        <h1 className="text-3xl text-white mb-6">Your Cart</h1>
-        <ul>
-          {cart.map((item, index) => {
-            // Fallback to index if item.id is not unique or missing
-            const itemKey = item.id || `fallback-key-${index}`;
+    <div className="min-h-screen bg-gray-100 p-8 flex justify-center">
+      <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg">
+        <h1 className="text-4xl font-semibold text-center mb-8">Your Shopping Cart</h1>
 
-            return (
-              <li key={itemKey} className="bg-slate-900 p-4 mb-4 rounded-lg shadow-md flex justify-between items-center">
-                <div>
-                  <h3 className="text-xl font-semibold">{item.name}</h3>
-                  <p className="text-white-700">${(item.price / 100).toFixed(2)}</p>
-                  <input
-                    type="number"
-                    value={item.quantity}
-                    onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-                    className="mt-2 w-16 p-2 border bg-slate-600  text-black rounded"
-                    min="1"
-                  />
-                </div>
-                <button 
-                  onClick={() => removeFromCart(item.id)} 
-                  className="text-white-500 px-4 py-2 rounded-3xl bg-blue-700 "
+        {cart.length === 0 ? (
+          <div className="text-center text-xl text-gray-600">Your cart is empty!</div>
+        ) : (
+          <div>
+            <ul className="space-y-6">
+              {cart.map((item) => (
+                <li
+                  key={item.id}
+                  className="bg-white p-6 rounded-lg shadow-md flex items-center justify-between transition-all transform hover:scale-105 hover:shadow-xl"
                 >
-                  Remove
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+                  <div className="flex items-center gap-6">
+                    {/* Display Product Image */}
+                    <img
+                      src={item.imageUrl || "https://images.pexels.com/photos/29768568/pexels-photo-29768568/free-photo-of-santa-claus-relaxing-outside-a-cozy-home.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"} // Fallback image if no imageUrl is found
+                      alt={item.name}
+                      className="w-24 h-24 object-cover rounded-lg shadow-md"
+                    />
+                    <div>
+                      <h3 className="text-2xl font-semibold text-gray-800">{item.name}</h3>
+                      <p className="text-lg text-gray-600">${(item.price / 100).toFixed(2)}</p>
+                      <div className="flex items-center gap-3 mt-2">
+                        <label className="text-sm text-gray-700">Quantity:</label>
+                        <input
+                          type="number"
+                          value={item.quantity}
+                          onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
+                          className="w-16 p-2 border rounded text-center"
+                          min="1"
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-        {/* Proceed to Checkout Button */}
-        <button
-          onClick={goToCheckout}
-          className="w-full mt-4 bg-blue-500 text-white py-2 px-4 rounded-md"
-        >
-          Proceed to Checkout
-        </button>
+                  <button
+                    onClick={() => removeFromCart(item.id)}
+                    className="text-red-500 font-semibold hover:text-red-700 transition duration-300"
+                  >
+                    Remove
+                  </button>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-12 flex flex-col sm:flex-row justify-between items-center">
+              <div className="text-2xl font-semibold text-gray-800">
+                Total: ${(totalAmount / 100).toFixed(2)}
+              </div>
+              <div className="flex gap-4">
+                <Link href="/checkout" className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                  Proceed to Checkout
+                </Link>
+                <Link href="/" className="bg-gray-300 text-gray-700 py-3 px-6 rounded-lg shadow-md hover:bg-gray-400 transition duration-300">
+                  Continue Shopping
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-    </AuthGuard>
+    </div>
   );
 };
 
 export default Cart;
+
