@@ -87,14 +87,15 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-
+import Link from "next/link";
+import { AiFillHeart } from "react-icons/ai";
 const Menu = () => {
   const [open, setOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0); // State to hold the cart count
 
   const router = useRouter();
 
-
+  const [favoritesCount, setFavoritesCount] = useState(0);
   const handleCart = () => {
     router.push("/cart");
     setOpen(false); // Close menu after navigation
@@ -106,7 +107,9 @@ const Menu = () => {
       const storedCart = cartData ? JSON.parse(cartData) : []; // Add a null check
       setCartCount(storedCart.length);
     };
-
+    const favoritesData = localStorage.getItem("favorites");
+    const storedFavorites = favoritesData ? JSON.parse(favoritesData) : [];
+    setFavoritesCount(storedFavorites.length);
     // Update cart count on mount
     updateCartCount();
 
@@ -171,6 +174,18 @@ const Menu = () => {
               </div>
             )}
           </div>
+          <div className="relative" onClick={()=>handleLinkClick("/favorites")} >
+        <Link href="/favorites" >
+          <AiFillHeart size={30} className="text-red-600 cursor-pointer" />
+       
+        {favoritesCount > 0 && (
+          <span className="absolute -top-2 -right-2 bg-blue-800 text-white text-xs font-bold px-2 py-1 rounded-full">
+            {favoritesCount}
+          </span>
+          
+        )}
+         </Link>
+      </div>
         </div>
       )}
     </div>

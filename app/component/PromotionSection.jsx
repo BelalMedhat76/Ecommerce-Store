@@ -1,10 +1,14 @@
 
 
 "use client";
-
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const PromotionSection = () => {
+  const router = useRouter();
+const handelShop=()=>{
+  router.push("/shop");
+}
   return (
     <section className="relative bg-gray-50 py-12 md:py-24 px-6 md:px-16">
       {/* Promotion Container */}
@@ -21,7 +25,7 @@ const PromotionSection = () => {
             Welcome to the new range of shaving products from master barber.
             We have over three decades of experience.
           </p>
-          <button className="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 transition duration-300">
+          <button className="bg-red-500 text-white px-6 py-3 rounded hover:bg-red-600 transition duration-300" onClick={handelShop}>
             Shop Now →
           </button>
         </div>

@@ -4,56 +4,63 @@
       "user": "John Doe",
       "rating": 5,
       "comment": "This product is amazing! It exceeded my expectations. Highly recommend.",
-      "userImage": "https://images.pexels.com/photos/1630786/pexels-photo-1630786.jpeg"
+      "userImage": "https://images.pexels.com/photos/6963004/pexels-photo-6963004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "2",
       "user": "Jane Smith",
       "rating": 4,
       "comment": "Good quality, but the shipping took longer than expected.",
-      "userImage": "https://images.pexels.com/photos/1239292/pexels-photo-1239292.jpeg"
+      "userImage": "https://images.pexels.com/photos/6801867/pexels-photo-6801867.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       "id": "3",
       "user": "Emily Johnson",
       "rating": 3,
       "comment": "The product works well, but it's a bit pricier than others.",
-      "userImage": "https://images.pexels.com/photos/1552087/pexels-photo-1552087.jpeg"
+      "userImage": "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "4",
       "user": "Michael Brown",
       "rating": 5,
       "comment": "Fantastic product! Worth every penny. Will buy again.",
-      "userImage": "https://images.pexels.com/photos/1587006/pexels-photo-1587006.jpeg"
+      "userImage": "https://images.pexels.com/photos/2679543/pexels-photo-2679543.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
     },
     {
       "id": "5",
       "user": "Sarah White",
       "rating": 4,
       "comment": "Great product, but I wish it came in more colors.",
-      "userImage": "https://images.pexels.com/photos/1574153/pexels-photo-1574153.jpeg"
+      "userImage": "https://images.pexels.com/photos/936119/pexels-photo-936119.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
     },
     {
         "id": "6",
         "user": "Michael Brown",
         "rating": 5,
         "comment": "Fantastic product! Worth every penny. Will buy again.",
-        "userImage": "https://images.pexels.com/photos/1587006/pexels-photo-1587006.jpeg"
+        "userImage": "https://images.pexels.com/photos/6102841/pexels-photo-6102841.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
       },
       {
         "id": "7",
         "user": "Jane Smith",
         "rating": 4,
         "comment": "Good quality, but the shipping took longer than expected.",
-        "userImage": "https://images.pexels.com/photos/1239292/pexels-photo-1239292.jpeg"
+        "userImage": "https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=600"
       },
       {
         "id": "8",
         "user": "John Doe",
         "rating": 5,
         "comment": "This product is amazing! It exceeded my expectations. Highly recommend.",
-        "userImage": "https://images.pexels.com/photos/1630786/pexels-photo-1630786.jpeg"
+        "userImage": "https://images.pexels.com/photos/4433109/pexels-photo-4433109.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      },
+      {
+        "id": "9",
+        "user": "Michael Brown",
+        "rating": 5,
+        "comment": "Fantastic product! Worth every penny. Will buy again.",
+        "userImage": "https://images.pexels.com/photos/6102841/pexels-photo-6102841.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
       }
   ]
   

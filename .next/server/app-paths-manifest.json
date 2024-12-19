@@ -1,5 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(auth)/login/page": "app/(auth)/login/page.js",
   "/(auth)/signup/page": "app/(auth)/signup/page.js",
@@ -12,6 +11,7 @@
   "/component/navbar/page": "app/component/navbar/page.js",
   "/confirmation/page": "app/confirmation/page.js",
   "/contact/page": "app/contact/page.js",
+  "/favorites/page": "app/favorites/page.js",
   "/page": "app/page.js",
   "/products/[id]/page": "app/products/[id]/page.js",
   "/products/page": "app/products/page.js",
@@ -19,5 +19,6 @@
   "/admin/orders/[id]/page": "app/admin/orders/[id]/page.js",
   "/admin/orders/manage/page": "app/admin/orders/manage/page.js",
   "/admin/orders/page": "app/admin/orders/page.js",
-  "/admin/products/page": "app/admin/products/page.js"
+  "/admin/products/page": "app/admin/products/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
