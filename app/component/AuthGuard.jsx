@@ -1,4 +1,4 @@
-// components/AuthGuard.jsx
+
 "use client";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -17,3 +17,5 @@ const AuthGuard = ({ children }) => {
 };
 
 export default AuthGuard;
+
+
